@@ -98,6 +98,11 @@ export const BentoGridItem = ({
                         />
                     )}
                 </div>
+                {id === 6 && (
+                    <BackgroundGradientAnimation>
+                        <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl" />
+                    </BackgroundGradientAnimation>
+                )}
 
                 <div
                     className={cn(
@@ -111,12 +116,6 @@ export const BentoGridItem = ({
                     <div className="font-sans text-lg lg-text-4xl font-bold max-w-96 z-10 ">
                         {title}
                     </div>
-
-                    {id === 6 && (
-                        <BackgroundGradientAnimation>
-                            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl" />
-                        </BackgroundGradientAnimation>
-                    )}
 
                     <div>{id === 2 && <GridGlobe />}</div>
 
@@ -150,7 +149,11 @@ export const BentoGridItem = ({
 
                     {id === 6 && (
                         <div className="mt-5 relative">
-                            <div className="absolute -bottom-5 right-0">
+                            <div
+                                className={`absolute -bottom-5 right-0 ${
+                                    copied ? "block" : "block"
+                                }`}
+                            >
                                 <Lottie
                                     options={{
                                         loop: copied,
@@ -166,7 +169,9 @@ export const BentoGridItem = ({
 
                             <MagicButton
                                 title={
-                                    copied ? "Email copied " : "Copy my email"
+                                    copied
+                                        ? "Email copied "
+                                        : "Copy my email address"
                                 }
                                 icon={<IoCopyOutline />}
                                 position="left"
