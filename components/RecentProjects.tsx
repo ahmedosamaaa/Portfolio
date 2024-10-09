@@ -1,5 +1,5 @@
 import { projects } from "@/data";
-import { PinContainer } from "./ui/3d-pin";
+// import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa6";
 
 function RecentProjects() {
@@ -17,21 +17,27 @@ function RecentProjects() {
                                 key={id}
                                 className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] sm:w-[570px] w-[80vw] flex items-center justify-center "
                             >
-                                <PinContainer title={link} href={link}>
-                                    <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10 ">
+                                <a
+                                    target="_blank"
+                                    href={link}
+                                    className="border bottom-[1px] rounded-3xl p-3 hover:bg-[#1a1e3e] transition-all duration-500"
+                                >
+                                    {/* <PinContainer title={link} href={link}> */}
+                                    <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                                         <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                                             <img src="/bg.png" alt="bg" />
                                         </div>
                                         <img
                                             src={img}
                                             alt={title}
-                                            className="z-10 absolute bottom-0"
+                                            className="z-10 absolute bottom-1 rotate-3 w-5/6 rounded-xl"
                                         />
                                     </div>
+
                                     <h1 className="font-bold text-base md:text-xl lg:text-2xl line-clamp-1">
                                         {title}
                                     </h1>
-                                    <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+                                    <p className="lg:text-lg lg:font-normal font-light text-sm line-clamp-2">
                                         {des}
                                     </p>
                                     <div className="flex items-center justify-between mt-7 mb-3">
@@ -49,6 +55,7 @@ function RecentProjects() {
                                                     <img
                                                         src={icon}
                                                         alt={icon}
+                                                        className="aspect-[4/3] w-4/5 object-contain"
                                                     />
                                                 </div>
                                             ))}
@@ -60,7 +67,8 @@ function RecentProjects() {
                                             <FaLocationArrow color="#CBACF9" />
                                         </div>
                                     </div>
-                                </PinContainer>
+                                </a>
+                                {/* </PinContainer> */}
                             </div>
                         )
                     )}

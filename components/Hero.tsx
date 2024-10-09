@@ -29,8 +29,8 @@ function Hero() {
 
             <div className="flex justify-center items-center relative my-20 z-10">
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                    <p className="uppercase tracking-wide text-xs md:text-base text-center text-blue-100 max-w-80">
-                        dynamic web magic with next.js
+                    <p className="uppercase tracking-wide text-xs md:text-base text-center text-blue-100 max-w-96">
+                        Building Modern, Engaging Interfaces
                     </p>
                     <TextGenerateEffect
                         words="Transforming Concepts into Seamless User Experiences"

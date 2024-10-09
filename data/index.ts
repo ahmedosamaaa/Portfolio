@@ -1,7 +1,6 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
 ];
 
@@ -49,7 +48,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
+        title: "Currently Learning Threejs Library",
         description: "The Inside Scoop",
         className: "lg:col-span-2 lg:row-span-2 row-span-1",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,139 +71,127 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        link: "/ui.earth.com",
+        title: "El-tawfek E-Learning System",
+        des: "The Education System app simplifies learning with videos, quizzes, and easy performance tracking.",
+        img: "/p1.png",
+        iconLists: ["/re.svg", "/tail.svg", "/js.svg"],
+        link: "https://eltawfek.com/",
     },
     {
         id: 2,
-        title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: [
-            "/next.svg",
-            "/tail.svg",
-            "/ts.svg",
-            "/stream.svg",
-            "/c.svg",
-        ],
-        link: "/ui.yoom.com",
+        title: "CampuSuit University Management System",
+        des: "The University Management System streamlines university operations with dashboards and a mobile app for students.",
+        img: "/p2.png",
+        iconLists: ["/re.svg", "/tail.svg", "/js.svg"],
+        link: "https://github.com/ahmedosamaaa/campus-suit?tab=readme-ov-file",
     },
     {
         id: 3,
-        title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-        link: "/ui.aiimg.com",
+        title: "The Wild Oasis",
+        des: "The Booking App simplifies bookings management with a user-friendly dashboard for statistics, filters, and secure access.",
+        img: "/p3.png",
+        iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/js.svg"],
+        link: "https://wildoasishotel.vercel.app/login",
     },
     {
         id: 4,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: "/p4.svg",
-        iconLists: [
-            "/next.svg",
-            "/tail.svg",
-            "/ts.svg",
-            "/three.svg",
-            "/gsap.svg",
-        ],
-        link: "/ui.apple.com",
+        title: "Wood Makers",
+        des: "The wood company website showcases projects, jobs, products, and features an upcoming online store.",
+        img: "/p4.png",
+        iconLists: ["/re.svg", "/tail.svg", "/js.svg"],
+        link: "https://wood-maker.net/",
     },
 ];
 
-export const testimonials = [
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-];
+// export const testimonials = [
+//     {
+//         quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//         name: "Michael Johnson",
+//         title: "Director of AlphaStream Technologies",
+//     },
+//     {
+//         quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//         name: "Michael Johnson",
+//         title: "Director of AlphaStream Technologies",
+//     },
+//     {
+//         quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//         name: "Michael Johnson",
+//         title: "Director of AlphaStream Technologies",
+//     },
+//     {
+//         quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//         name: "Michael Johnson",
+//         title: "Director of AlphaStream Technologies",
+//     },
+//     {
+//         quote: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//         name: "Michael Johnson",
+//         title: "Director of AlphaStream Technologies",
+//     },
+// ];
 
-export const companies = [
-    {
-        id: 1,
-        name: "cloudinary",
-        img: "/cloud.svg",
-        nameImg: "/cloudName.svg",
-    },
-    {
-        id: 2,
-        name: "appwrite",
-        img: "/app.svg",
-        nameImg: "/appName.svg",
-    },
-    {
-        id: 3,
-        name: "HOSTINGER",
-        img: "/host.svg",
-        nameImg: "/hostName.svg",
-    },
-    {
-        id: 4,
-        name: "stream",
-        img: "/s.svg",
-        nameImg: "/streamName.svg",
-    },
-    {
-        id: 5,
-        name: "docker.",
-        img: "/dock.svg",
-        nameImg: "/dockerName.svg",
-    },
-];
+// export const companies = [
+//     {
+//         id: 1,
+//         name: "cloudinary",
+//         img: "/cloud.svg",
+//         nameImg: "/cloudName.svg",
+//     },
+//     {
+//         id: 2,
+//         name: "appwrite",
+//         img: "/app.svg",
+//         nameImg: "/appName.svg",
+//     },
+//     {
+//         id: 3,
+//         name: "HOSTINGER",
+//         img: "/host.svg",
+//         nameImg: "/hostName.svg",
+//     },
+//     {
+//         id: 4,
+//         name: "stream",
+//         img: "/s.svg",
+//         nameImg: "/streamName.svg",
+//     },
+//     {
+//         id: 5,
+//         name: "docker.",
+//         img: "/dock.svg",
+//         nameImg: "/dockerName.svg",
+//     },
+// ];
 
 export const workExperience = [
     {
         id: 1,
+        title: "Freelance Web Dev Project",
+        desc: "Led the dev of a web app for a client, from initial concept to deployment.",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/exp3.svg",
+    },
+    {
+        id: 2,
         title: "Frontend Engineer Intern",
         desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
     {
-        id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp2.svg",
-    },
-    {
         id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp3.svg",
+        title: "Frontend Instractor",
+        desc: "Taught front-end development concepts using modern web technologies effectively.",
+        className: "md:col-span-2",
+        thumbnail: "/exp4.svg",
     },
     {
         id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
-        className: "md:col-span-2",
-        thumbnail: "/exp4.svg",
+        title: "Training in Route",
+        desc: "I learned Node.js at Route Training Center and completed additional projects for further training.",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/exp2.svg",
     },
 ];
 
@@ -244,13 +231,11 @@ export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
+        link: "https://github.com/ahmedosamaaa",
     },
     {
         id: 2,
-        img: "/twit.svg",
-    },
-    {
-        id: 3,
         img: "/link.svg",
+        link: "https://www.linkedin.com/in/ahmed-osama-in/",
     },
 ];
