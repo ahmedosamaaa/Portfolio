@@ -1,9 +1,14 @@
 "use client";
 import React from "react";
 
+import { SVGProps } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { approach } from "@/data";
+
+interface IconProps extends SVGProps<SVGSVGElement> {
+    className?: string; // className is optional
+}
 
 function Approach() {
     return (
@@ -98,7 +103,7 @@ const AceternityIcon = ({ order }: { order: string }) => {
     );
 };
 
-export const Icon = ({ className, ...rest }: any) => {
+export const Icon = ({ className, ...rest }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
