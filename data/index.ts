@@ -91,7 +91,7 @@ export const projects = [
         des: "The Booking App simplifies bookings management with a user-friendly dashboard for statistics, filters, and secure access.",
         img: "/p3.png",
         iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/js.svg"],
-        link: "https://wildoasishotel.vercel.app/login",
+        link: "https://wildoasishotel.vercel.app",
     },
     {
         id: 4,
