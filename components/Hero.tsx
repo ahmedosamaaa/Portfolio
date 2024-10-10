@@ -37,7 +37,7 @@ function Hero() {
                         className="text-center text-xl md:text-5xl lg:text-6xl mb-4 leading-relaxed "
                     />
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                        Hi! I&apos;m Ahmed Osama, a Next.js Developer based in
+                        Hi! I&apos;m Ahmed Osama, a Front-End Developer based in
                         Egypt.
                     </p>
                     <Link href="#about">
