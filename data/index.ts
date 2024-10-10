@@ -181,7 +181,7 @@ export const workExperience = [
     },
     {
         id: 3,
-        title: "Frontend Instractor",
+        title: "Frontend Instructor",
         desc: "Taught front-end development concepts using modern web technologies effectively.",
         className: "md:col-span-2",
         thumbnail: "/exp4.svg",
