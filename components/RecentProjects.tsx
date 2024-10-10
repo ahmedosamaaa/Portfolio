@@ -15,7 +15,7 @@ function RecentProjects() {
                         ({ id, title, des, img, iconLists, link }) => (
                             <div
                                 key={id}
-                                className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] sm:w-[570px] w-[80vw] flex items-center justify-center "
+                                className="h-[32rem] lg:min-h-[20rem] w-[80vw] md:w-[450px] flex items-center justify-center "
                             >
                                 <a
                                     target="_blank"
@@ -23,7 +23,7 @@ function RecentProjects() {
                                     className="border bottom-[1px] rounded-3xl p-3 hover:bg-[#1a1e3e] transition-all duration-500"
                                 >
                                     {/* <PinContainer title={link} href={link}> */}
-                                    <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+                                    <div className="relative flex items-center justify-center  overflow-hidden h-[30vh] mb-10">
                                         <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                                             <img src="/bg.png" alt="bg" />
                                         </div>
