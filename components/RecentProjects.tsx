@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import { Project } from "@/sanity.types";
 import MagicButton from "./ui/MagicButton";
+import { notFound } from "next/navigation";
 const PinContainer = dynamic(
     () => import("./ui/3d-pin").then((mod) => mod.PinContainer),
     { ssr: false }
@@ -14,18 +15,21 @@ const PinContainer = dynamic(
 const RecentProjects = ({ projects }: { projects: Project[] }) => {
     const [visibleCount, setVisibleCount] = useState(5);
     // Handler for loading more projects
-    console.log("projectLength", projects.length);
-    // const handleLoadMore = () => {
-    //     if (visibleCount < projects.length) {
-    //         setVisibleCount((prev) => prev + 4); // Load 4 more projects
-    //     }
-    // };
-    // const handleReset = () => {
-    //     if (visibleCount > projects.length) {
-    //         setVisibleCount(4); // Load 4 more projects
-    //     }
-    // };
-    console.log("visibleCount", visibleCount);
+
+    const handleLoadMore = () => {
+        if (visibleCount < projects.length) {
+            setVisibleCount((prev) => prev + 4); // Load 4 more projects
+        }
+    };
+    const handleReset = () => {
+        if (visibleCount > projects.length) {
+            setVisibleCount(4); // Load 4 more projects
+        }
+    };
+    if (!projects) {
+        return notFound();
+    }
+
     return (
         <section id="projects" className="py-20">
             <h1 className="heading">
@@ -106,7 +110,7 @@ const RecentProjects = ({ projects }: { projects: Project[] }) => {
                         </div>
                     ))}
                 </div>
-                {/* {projects.length == visibleCount ? null : projects.length >
+                {projects.length == visibleCount ? null : projects.length >
                   visibleCount ? (
                     <MagicButton
                         handleClick={handleLoadMore}
@@ -121,7 +125,7 @@ const RecentProjects = ({ projects }: { projects: Project[] }) => {
                         icon={<HiCursorClick />}
                         position="right"
                     />
-                )} */}
+                )}
             </div>
         </section>
     );
