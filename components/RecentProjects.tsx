@@ -40,7 +40,7 @@ const RecentProjects = ({ projects }: { projects: Project[] }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center p-4 gap-12 md:gap-8 xl:gap-16 mt-10">
                     {projects.slice(0, visibleCount).map((item) => (
                         <div
-                            className="h-[20rem] lg:min-h-[32.5rem]   items-center justify-center "
+                            className="h-[24rem] lg:min-h-[32.5rem]   items-center justify-center "
                             key={item._id}
                         >
                             <PinContainer title={item.link} href={item.link}>
